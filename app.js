@@ -1,4 +1,4 @@
-import express from "express"
+const express = require('express')
 
 const app = express()
 
@@ -11,5 +11,4 @@ app.use((req,res)=>{
     res.status(200).text("Hello there this is being runned from vercel servrless function, and is and xpress server")
 })
 
-
-export default app
+module.exports = app
